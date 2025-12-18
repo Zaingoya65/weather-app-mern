@@ -11,6 +11,6 @@ app.use(express.json());
 
 app.use("/api/weather", weatherRoutes);
 
-app.listen(process.env.PORT || 5000, () => {
-    console.log(`Server running on port ${process.env.PORT || 5000}`);
+app.listen(process.env.SERVER_PORT, () => {
+    // console.log(`Server running on port ${process.env.SERVER_PORT}`);
 });

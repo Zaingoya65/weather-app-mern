@@ -16,7 +16,7 @@ router.get("/:city", async (req, res) => {
         const response = await axios.get(url);
         res.json(response.data);
     } catch (error) {
-        console.error("Weather API Error:", error.response?.data || error.message);
+        // console.error("Weather API Error:", error.response?.data || error.message);
         res.status(500).json({ message: "City not found or API error" });
     }
 });
@@ -34,7 +34,7 @@ router.get("/search/:query", async (req, res) => {
         const response = await axios.get(url);
         res.json(response.data);
     } catch (error) {
-        console.error("Search API Error:", error.response?.data || error.message);
+        // console.error("Search API Error:", error.response?.data || error.message);
         res.status(500).json({ message: "Search error" });
     }
 });

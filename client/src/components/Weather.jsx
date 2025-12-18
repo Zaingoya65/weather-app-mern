@@ -28,7 +28,7 @@ function Weather() {
       const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/weather/search/${q}`);
       setSuggestions(res.data);
     } catch (err) {
-      console.error("Suggestions error:", err);
+      // console.error("Suggestions error:", err);
     }
   };
 
